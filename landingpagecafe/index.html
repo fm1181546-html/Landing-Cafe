@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Fiksi - Aroma & Cerita dalam Secangkir Kopi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="icon" href="https://placehold.co/32x32/5a3d32/f5f0e6?text=KS" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="https://wa.me/6289509394128?text=Halo,%20saya%20tertarik%20dengan%20Kopi%20Senja." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white h-14 w-14 rounded-full shadow-lg flex items-center justify-center transition-transform transform hover:scale-110">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="hidden lg:block text-sm text-[var(--color-text-latte)]">
+                <div id="date-display" class="font-medium"></div>
+                <div id="time-display"></div>
+            </div>
+            <a href="#" class="text-3xl font-bold font-serif text-[var(--color-text-cream)] lg:absolute lg:left-1/3 lg:-translate-x-1/2">Kopi Fiksi</a>
+            <div class="hidden md:flex space-x-6 items-center text-sm font-medium">
+                <a href="#beranda" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Beranda</a>
+                <a href="#tentang" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Tentang</a>
+                <a href="#menu" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Menu</a>
+                <a href="#acara" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Acara</a>
+                <a href="#galeri" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Galeri</a>
+                <a href="#testimoni" class="text-[var(--color-text-latte)] hover:text-white transition-colors">Testimoni</a>
+                <a href="#kontak" class="btn btn-secondary !py-2 !px-6">Kontak</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-espresso-dark)]">
+             <a href="#beranda" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Beranda</a>
+            <a href="#tentang" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Tentang</a>
+            <a href="#menu" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Menu</a>
+            <a href="#acara" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Acara</a>
+            <a href="#galeri" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Galeri</a>
+            <a href="#testimoni" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Testimoni</a>
+            <a href="#kontak" class="block text-center py-3 text-white hover:bg-[var(--color-mocha-brown)] transition-colors">Kontak</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="relative min-h-screen flex items-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-espresso-dark)] via-black/50 to-transparent"></div>
+            <img src="images/image.webp" 
+                 alt="[Gambar interior kafe yang remang-remang dan elegan]" 
+                 class="w-full h-full absolute inset-0 object-cover -z-10">
+            <div class="container mx-auto px-6 text-white relative">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">Aroma & Cerita <span class="title-accent">dalam Secangkir Kopi.</span></h1>
+                    <p class="text-lg md:text-xl mt-6 max-w-lg text-[var(--color-text-latte)]">
+                        Di Kopi Fiksi, kami tidak hanya menyeduh kopi. Kami merangkai momen, menciptakan kehangatan, dan menjadi bagian dari cerita Anda.
+                    </p>
+                    <a href="#menu" class="btn btn-primary mt-10">Jelajahi Menu Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-24 md:py-32 bg-[var(--color-mocha-brown)]">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div class="lg:w-1/2 relative fade-in-up">
+                        <div class="absolute -top-4 -left-4 w-full h-full border-4 border-[var(--color-accent-gold)]/30 rounded-lg -z-10"></div>
+                        <img src="images/home.webp" 
+                             alt="[Gambar barista sedang menuangkan latte art]" 
+                             class="rounded-lg shadow-2xl w-full h-auto object-cover relative">
+                    </div>
+                    <div class="lg:w-1/2 fade-in-up" style="transition-delay: 200ms;">
+                        <h2 class="text-4xl md:text-5xl mb-6">Lebih dari <span class="title-accent">Sekadar Cafe</span></h2>
+                        <p class="mb-4 text-lg">
+                            Kopi Fiksi adalah sebuah perjalanan. Dimulai dari biji kopi terbaik nusantara yang dipilih dengan cermat, hingga diseduh dengan penuh gairah oleh barista terampil.
+                        </p>
+                        <p class="text-lg">
+                            Kami membangun tempat ini sebagai oase ketenangan di tengah hiruk pikuk kota. Sebuah ruang di mana setiap sudutnya dirancang untuk kenyamanan, inspirasi, dan koneksi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl mb-4">Menu <span class="title-accent">Favorit</span></h2>
+                    <p class="text-lg">Dibuat dengan bahan-bahan terbaik. Jelajahi pilihan kami.</p>
+                </div>
+                <div id="menu-filters" class="flex flex-wrap justify-center gap-4 mt-12 fade-in-up">
+                    <button class="menu-filter-btn active" data-filter="all">Semua</button>
+                    <button class="menu-filter-btn" data-filter="kopi">Kopi</button>
+                    <button class="menu-filter-btn" data-filter="non-kopi">Non-Kopi</button>
+                    <button class="menu-filter-btn" data-filter="makanan">Makanan Ringan</button>
+                </div>
+                <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="menu-item" data-category="kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Italian Coffee facts.webp" alt="[Gambar Es Kopi Susu Gula Aren]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Signature Kopi Fiksi</h3><p class="mt-2 mb-4 h-16">Espresso, susu, dan sirup aren rahasia kami.</p><span class="font-bold text-xl title-accent">Rp 35.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/V60 Manual Pour Over Coffee Stock Photo - Image of schottel, clothing_ 185765080.webp" alt="[Gambar V60 Pour Over Coffee]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">V60 Manual Brew</h3><p class="mt-2 mb-4 h-16">Nikmati karakter asli dari biji kopi single origin.</p><span class="font-bold text-xl title-accent">Rp 22.000</span></div>
+                        </div>
+                    </div>
+                     <div class="menu-item" data-category="kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Cappuccino (1).webp" alt="[Gambar Cappuccino]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Cappuccino</h3><p class="mt-2 mb-4 h-16">Keseimbangan sempurna antara espresso dan susu.</p><span class="font-bold text-xl title-accent">Rp 25.000</span></div>
+                        </div>
+                    </div>
+                     <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Easy Homemade Matcha Latte (Hot or Iced).webp" alt="[Gambar Matcha Latte]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Matcha Latte</h3><p class="mt-2 mb-4 h-16">Bubuk matcha premium dari Jepang dengan susu segar.</p><span class="font-bold text-xl title-accent">Rp 17.000</span></div>
+                        </div>
+                    </div>
+                     <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Tiennielicious, Subang Jaya.webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Lychee Tea</h3><p class="mt-2 mb-4 h-16">Teh segar dengan rasa leci yang manis dan menyegarkan.</p><span class="font-bold text-xl title-accent">Rp 15.000</span></div>
+                        </div>
+                    </div>
+                     <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/9 Viral Coffee Trends Taking Over – Have You Tried Them Yet_ _ Crave Worthy Nutrition.webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Thai Tea</h3><p class="mt-2 mb-4 h-16">Teh Thailand dengan rasa manis dan creamy yang pas, disajikan panas atau dingin</p><span class="font-bold text-xl title-accent">Rp 17.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Cacao Drink Recipe – A Healthy and Chocolatey Beverage - recipeplatter.webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Chocolate</h3><p class="mt-2 mb-4 h-16">Cokelat lembut dan nikmat, disajikan panas atau dingin.</p><span class="font-bold text-xl title-accent">Rp 18.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/LEMON TEA.webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Lemon Tea</h3><p class="mt-2 mb-4 h-16">Teh segar dengan perasan lemon yang asam manis. disajikan panas atau dingin.</p><span class="font-bold text-xl title-accent">Rp 30.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Decadent Chocolate Milkshake You'd Never Know Is Healthy (Vegan, Gluten-Free, Refined Sugar Free, Easily Made Raw) - Will Cook For Friends.webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Milkshake</h3><p class="mt-2 mb-4 h-16">Milkshake dingin dan creamy dengan pilihan rasa favorit.</p><span class="font-bold text-xl title-accent">Rp 20.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="non-kopi">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/download (14).webp" alt="[Gambar Chocolate]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Taro Latte</h3><p class="mt-2 mb-4 h-16">Taro creamy berpadu dengan susu segar, lembut dan manis.</p><span class="font-bold text-xl title-accent">Rp 18.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/The Ultimate Red Velvet Cake Recipe_ Indulge in Sweet Perfection.webp" alt="[Gambar Red Velvet Cake]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Red Velvet Cake</h3><p class="mt-2 mb-4 h-16">Kue lembut dengan cream cheese frosting mewah.</p><span class="font-bold text-xl title-accent">Rp 28.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/These light and fluffy delicious American-style pancakes are ideal for a quick breakfast or a late weekend brunch_23.webp" alt="[Gambar Truffle Fries]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Pancake</h3><p class="mt-2 mb-4 h-16">Pancake tebal dengan tekstur fluffy, dipadukan saus spesial dan topping premium.</p><span class="font-bold text-xl title-accent">Rp 31.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Savory Air Fryer Potato Wedges _ How To Make In Easiest Ways!.webp" alt="[Gambar Truffle Fries]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Truffle Fries</h3><p class="mt-2 mb-4 h-16">Kentang, digoreng dengan minyak berkualitas baru untuk rasa renyah dan di setiap gigitan.</p><span class="font-bold text-xl title-accent">Rp 38.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/download (12).webp" alt="[Gambar Truffle Fries]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Roti Bakar</h3><p class="mt-2 mb-4 h-16">Roti bakar hangat dengan olesan mentega, keju leleh, dan sentuhan rasa istimewa.</p><span class="font-bold text-xl title-accent">Rp 20.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/Croffles (Croissant Waffles).webp" alt="[Gambar Truffle Fries]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Croffle</h3><p class="mt-2 mb-4 h-16">Perpaduan croissant dan waffle, renyah di luar, lembut di dalam.</p><span class="font-bold text-xl title-accent">Rp 9.000</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="makanan">
+                        <div class="bg-[var(--color-mocha-brown)] border border-white/10 rounded-lg overflow-hidden group transition-all duration-300 hover:border-[var(--color-accent-gold)]/50 hover:shadow-2xl hover:shadow-black/30">
+                            <div class="overflow-hidden h-64"><img src="images/download (13).webp" alt="[Gambar Truffle Fries]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div>
+                            <div class="p-6"><h3 class="text-2xl">Donat Mini</h3><p class="mt-2 mb-4 h-16">Donat mini dengan tampilan lucu dan rasa manis pas, favorit untuk camilan santai.</p><span class="font-bold text-xl title-accent">Rp 12.000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="acara" class="py-24 md:py-32 bg-[var(--color-mocha-brown)]">
+            <div class="container mx-auto px-6">
+                 <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl mb-4">Acara <span class="title-accent">Spesial</span></h2>
+                    <p class="text-lg">Jangan lewatkan acara dan promosi menarik yang kami siapkan khusus untuk Anda.</p>
+                </div>
+                <div class="mt-16 max-w-4xl mx-auto bg-[var(--color-espresso-dark)] rounded-lg shadow-2xl flex flex-col md:flex-row overflow-hidden fade-in-up">
+                    <img src="images/Nashville's Best Jazz Spots_ Where Music Comes Alive.webp" alt="[Gambar suasana live music]" class="w-full md:w-5/12 h-64 md:h-auto object-cover">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <p class="text-sm font-semibold text-[var(--color-accent-gold)]">ACARA MENDATANG</p>
+                        <h3 class="text-3xl mt-2 mb-4">Senja Akustik</h3>
+                        <p class="mb-6">Nikmati alunan musik akustik yang menenangkan setiap Sabtu malam. Temani malam minggu Anda dengan melodi indah dan secangkir kopi hangat.</p>
+                        <div class="flex items-center gap-4 text-lg">
+                            <i data-lucide="calendar" class="w-6 h-6 text-[var(--color-accent-gold)]"></i>
+                            <span>Setiap Sabtu, 19:20 WIB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri" class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl mb-4">Momen di <span class="title-accent">Kopi Fiksi</span></h2>
+                    <p class="text-lg">Intip kehangatan dan suasana di dalam rumah kami. Setiap sudut adalah cerita.</p>
+                </div>
+                <div class="masonry-gallery mt-16 fade-in-up">
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/Italian Coffee facts.webp" alt="[Gambar cangkir di atas biji kopi]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/download (7).webp" alt="[Gambar barista menuang kopi]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/How to Clean a Coffee Grinder.webp" alt="[Gambar interior kafe]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/Virtuoso Latte.webp" alt="[Gambar croissant]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/Brew the Perfect Cup at Black Dog Sweet Shop! ☕.webp" alt="[Gambar cangkir kopi dari atas]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/download (11).webp" alt="[Gambar teman di kafe]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/Enchanted Castle Under Moonlight.webp" alt="[Gambar mesin kopi]"></div>
+                    <div class="break-inside mb-4"><img class="h-auto w-full rounded-lg shadow-lg transition-transform hover:scale-105" img src="images/download (10).webp" alt="[Gambar orang bekerja di kafe]"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="py-24 md:py-32 bg-[var(--color-mocha-brown)]">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl mb-4">Kata Mereka <span class="title-accent">Tentang Kami</span></h2>
+                    <p class="text-lg">Kami bangga menjadi bagian dari momen berharga para pelanggan kami.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    <div class="bg-[var(--color-espresso-dark)] p-8 rounded-lg border border-white/10 fade-in-up">
+                        <i data-lucide="quote" class="w-10 h-10 text-[var(--color-accent-gold)] opacity-50 mb-4"></i>
+                        <p class="mb-6">"Tempat ternyaman buat nugas di Bekasi Utara. Kopinya enak, suasananya tenang, Wi-Fi kencang. Baristanya juga ramah-ramah!"</p>
+                        <div class="flex items-center">
+                            <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080&auto=format&fit=crop" alt="[Foto profil pelanggan 1]">
+                            <div class="ml-4"><h4 class="font-bold text-white">Muhammad Fadhel</h4><p class="text-sm text-[var(--color-text-latte)]">Mahasiswa</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--color-espresso-dark)] p-8 rounded-lg border border-white/10 fade-in-up" style="transition-delay: 200ms;">
+                        <i data-lucide="quote" class="w-10 h-10 text-[var(--color-accent-gold)] opacity-50 mb-4"></i>
+                        <p class="mb-6">"Signature Kopi Fiksi-nya juara! Rasanya beda dari yang lain. Tempatnya juga estetik banget buat foto-foto. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop" alt="[Foto profil pelanggan 2]">
+                            <div class="ml-4"><h4 class="font-bold text-white">Nadia Mahalini</h4><p class="text-sm text-[var(--color-text-latte)]">Content Creator</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--color-espresso-dark)] p-8 rounded-lg border border-white/10 fade-in-up" style="transition-delay: 400ms;">
+                        <i data-lucide="quote" class="w-10 h-10 text-[var(--color-accent-gold)] opacity-50 mb-4"></i>
+                        <p class="mb-6">"Sering meeting sama klien di sini. Suasananya profesional tapi tetap santai. Red Velvet Cake-nya wajib coba, enak banget."</p>
+                        <div class="flex items-center">
+                            <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="[Foto profil pelanggan 3]">
+                            <div class="ml-4"><h4 class="font-bold text-white">Ryan Santoso</h4><p class="text-sm text-[var(--color-text-latte)]">Freelancer</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-24 md:py-32 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(44, 30, 26, 0.9), rgba(44, 30, 26, 0.9)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=2070&auto=format&fit=crop')">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Kami Menunggu <span class="title-accent">Kedatangan Anda</span></h2>
+                <p class="text-lg max-w-2xl mx-auto mb-10 text-[var(--color-text-latte)]">Jadikan hari Anda lebih istimewa. Kunjungi kami untuk secangkir kopi terbaik dan suasana yang tak akan Anda lupakan.</p>
+                <div class="bg-black/20 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-2xl mx-auto border border-white/20">
+                    <p class="text-xl font-semibold">Jl. Perjuangan, No 56, Bekasi Utara</p>
+                    <p class="mt-2">Buka Setiap Hari: 08:00 - 01:00 WIB</p>
+                    <div class="mt-6">
+                        <a href="" target="_blank" class="btn btn-primary">Lihat di Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[var(--color-mocha-brown)] py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl mb-2">Kopi Fiksi</h3>
+            <p class="max-w-md mx-auto mb-6">Tempat di mana setiap tegukan adalah cerita dan setiap senja adalah momen berharga.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/fzxdellw/" class="text-[var(--color-text-latte)] hover:text-white">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100073682769366" class="text-[var(--color-text-latte)] hover:text-white">Facebook</a>
+                <a href="https://www.tiktok.com/@username719277" class="text-[var(--color-text-latte)] hover:text-white">TikTok</a>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-sm">
+                <p>&copy; 2025 Kopi Fiksi. Didesain dengan Penuh Cinta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
